@@ -8,7 +8,7 @@ function rpc.add_handler(name,func)
 end
 
 function rpc.has_handler(name)
-    return handlers ~= nil
+    return handlers[name] ~= nil
 end
 
 function rpc.call(name,args)
